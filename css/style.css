@@ -12,6 +12,77 @@ body {
     background-color: #ffffff;
     box-shadow: rgba(0, 0, 0, 0.8) 0px 10px 10px -12px;
 }
+
+/* Skill bar */
+.code-lang {
+    overflow: hidden;
+    position: relative;
+}
+.code-lang .skill-name {
+    position: relative;
+    height: .3rem;
+    top: .8rem;
+    width: 100%;
+    background-color: #c0c0c0;
+}
+.code-lang .code-percent {
+    position: relative;
+    height: .3rem;
+    margin: .5rem 0;
+    background-color: #f46258;
+    z-index: 1;
+}
+.code-lang p {
+    margin: 0;
+}
+.code-lang .html {
+    width: 90%;
+    animation: html 2s;
+}
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+.code-lang .css {
+    width: 80%;
+    animation: css 2s;
+}
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+.code-lang .js {
+    width: 80%;
+    animation: js 2s;
+}
+@keyframes js {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+.code-lang .php {
+    width: 80%;
+    animation: php 2s;
+}
+@keyframes php {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 65%;
+    }
+}
 .info-footer {
     background-color: #ffffff;
 }
