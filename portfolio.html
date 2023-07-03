@@ -9,71 +9,199 @@
 </head>
 <body>
     <!-- Info bar -->
-    <div class="container mt-4">
+    <div class="container">
         <div class="row">
-            <div class="col-3">
-                <div class="info">
-                    <div class="profile text-center py-3 d-inline-block w-100">
-                        <img src="" alt="">
-                        <p class="name">Tananun Wanasinsomboon</p>
-                        <p class="position">Newbie Web Developer</p>
-                    </div>
-                    <div class="info-detail p-4">
-                        <div class="country d-flex justify-content-between">
-                            <div class="conuntry-left text-start">
-                                <p>Country: </p>
-                                <p>City: </p>
-                                <p>Age: </p>
-                            </div>
-                            <div class="conuntry-right text-end">
-                                <p>Thailand</p>
-                                <p>Maehongson</p>
-                                <p>26</p>
-                            </div>
-                        </div>
-                        <div class="lang-skill">
-                            <hr>
-                            <div class="thai-lang">
-                                <div class="thai-percent"></div>
-                                <p>Thai</p>
-                            </div>
-                            <div class="eng-lang">
-                                <div class="eng-percent"></div>
-                                <p>English</p>
-                            </div>
-                            <hr>
-                        </div>
-                        <div class="code-lang">
-                            <div class="d-flex justify-content-between">
-                                <p>HTML</p>
-                                <p>90%</p>
-                            </div>
-                            <div class="skill-name"></div>
-                            <div class="code-percent html" ></div>
-                            <div class="d-flex justify-content-between">
-                                <p>CSS</p>
-                                <p>80%</p>
-                            </div>
-                            <div class="skill-name"></div>
-                            <div class="code-percent css" ></div>
-                            <div class="d-flex justify-content-between">
-                                <p>JAVASCRIPT</p>
-                                <p>70%</p>
-                            </div>
-                            <div class="skill-name"></div>
-                            <div class="code-percent js" ></div>
-                            <div class="d-flex justify-content-between">
-                                <p>PHP</p>
-                                <p>65%</p>
-                            </div>
-                            <div class="skill-name"></div>
-                            <div class="code-percent php"></div>
+            <div class="col-0 col-lg-3 side-bar">
+                <div class="row">
+                    <div class="col-9 col-md-5 col-lg-3 top-info">
+                        <div class="profile d-inline-flex justify-content-center flex-column align-items-center py-3 w-100">
+                            <!-- <i class="fa-solid fa-ellipsis-vertical" onclick="toggleSidebar()"></i> -->
+                            <img src="img/work-img/man.png" alt="" width="60rem" height="60rem">
+                            <p class="name m-0"><strong>Tananun Wanasinsomboon</strong></p>
+                            <p class="position m-0">Newbie Web Developer</p>
                         </div>
                     </div>
-                    <div class="info-footer py-3 d-flex justify-content-center gap-2">
-                        <a href="https://www.facebook.com/tananun.wanasin/"><i class="fa-brands fa-facebook" style="color: #424242;"></i></a>
-                        <a href="https://github.com/THEGATESTART"><i class="fa-brands fa-github" style="color: #424242;"></i></a>
-                        <a href="https://line.me/ti/p/mNSNIGJPbX"><i class="fa-brands fa-line" style="color: #424242;"></i></a>
+                    <div class="col-9 col-md-5 col-lg-3 middle-info">
+                        <div class="info-detail">
+                            <div class="country d-flex justify-content-between">
+                                <div class="country-left text-start">
+                                    <p>Country: </p>
+                                    <p>City: </p>
+                                    <p>Age: </p>
+                                </div>
+                                <div class="country-right text-end">
+                                    <p>Thailand</p>
+                                    <p>Maehongson</p>
+                                    <p>26</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="lang-skill py-3">
+                                <div class="lang">
+                                    <div class="circular-progress">
+                                        <div class="lang-percent">0%</div>
+                                    </div>
+                                    <p class="mt-2 mb-0">Thai</p>
+                                </div>
+                                <div class="lang">
+                                    <div class="circular-progressE">
+                                        <div class="lang-percentE">0%</div>
+                                    </div>
+                                    <p class="mt-2 mb-0">English</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="code-lang py-2">
+                                <div class="d-flex justify-content-between">
+                                    <p>HTML</p>
+                                    <p>90%</p>
+                                </div>
+                                <div class="skill-name"></div>
+                                <div class="code-percent html"></div>
+                                <div class="d-flex justify-content-between mt-2">
+                                    <p>CSS</p>
+                                    <p>80%</p>
+                                </div>
+                                <div class="skill-name"></div>
+                                <div class="code-percent css"></div>
+                                <div class="d-flex justify-content-between mt-2">
+                                    <p>JAVASCRIPT</p>
+                                    <p>70%</p>
+                                </div>
+                                <div class="skill-name"></div>
+                                <div class="code-percent js"></div>
+                                <div class="d-flex justify-content-between mt-2">
+                                    <p>PHP</p>
+                                    <p>65%</p>
+                                </div>
+                                <div class="skill-name"></div>
+                                <div class="code-percent php"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9 col-md-5 col-lg-3 bottom-info">
+                        <div class="info-footer py-2 d-flex justify-content-center gap-2">
+                            <a href="https://www.facebook.com/tananun.wanasin/"><i class="fa-brands fa-facebook" style="color: #424242;"></i></a>
+                            <a href="https://github.com/THEGATESTART"><i class="fa-brands fa-github" style="color: #424242;"></i></a>
+                            <a href="https://line.me/ti/p/mNSNIGJPbX"><i class="fa-brands fa-line" style="color: #424242;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-12 nav-top">
+                        <nav class="bg-white">
+                            <ul class="d-flex justify-content-between align-items-center gap-2 py-2 px-3">
+                                <button onclick="toggleSidebar()"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                                <div class="list-link d-flex justify-content-end align-items-center gap-2">
+                                    <li class="list-unstyled"><a href="#home">HOME</a></li>
+                                    <li class="list-unstyled"><a href="#works">My WORKS</a></li>
+                                    <li class="list-unstyled"><a href="#resume">RESUME</a></li>
+                                    <li class="list-unstyled"><a href="#contact">CONTACT</a></li>
+                                </div>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 middle-content">
+                        <section class="my-banner" id="home">
+                            <div class="bg-ban"></div>
+                            <div class="sub-bg"></div>
+                            <div class="main-bg">
+                                <div class="main-content d-flex justify-content-lg-between align-items-center">
+                                    <div class="slogan d-flex flex-column text-center w-100">
+                                        <h2 class="d-inline-block">Discover my Port</h2>
+                                        <h2>Space!</h2>
+                                        <p>&lt;<span class="mark-code">Code</span>&gt; I build <span class="typed-text"></span><span class="cursor">&nbsp;</span> &lt;<span class="mark-code">Code</span>&gt;</p>
+                                        <div class="btn d-flex align-items-end mt-4">
+                                            <button class="now-btn">EXPLORE NOW</button>
+                                        </div>
+                                    </div>
+                                    <div class="myimg">
+                                        <!-- <img src="img/work-img/man-content.png" width="300rem" height="300rem" alt=""> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="works" id="works">
+                            <h5 class="mt-2 header">My Works</h5>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="work-done">
+                                                <img src="img/work-img/bus.jpg" class="img-fluid" alt="Bus Image">
+                                                <div class="show-more">
+                                                    <h5>Bus Ticket Website</h5>
+                                                    <p class="m-0">Mini bus tour in town at Nan, Thailand.</p>
+                                                    <a href="#" class="link-arrow">Jump To <span>></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="resume" id="resume">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <h5 class="header">Education</h5>
+                                    <div class="edu-box">
+                                        <div class="univer-box d-flex justify-content-between">
+                                            <div class="univer-content">
+                                                <h5>Rajamankala University of <br>Technology lanna Nan</h5>
+                                                <p>Student</p>
+                                            </div>
+                                            <div class="univer-date">
+                                                <p>May 2017 - March 2020</p>
+                                            </div>
+                                        </div>
+                                        <p class="m-0">Bachelor of Science Program in Computer Science, Muang Nan, Nan</p>
+                                        <button class="more-diplome p-0 mt-2">DIPLOME <span>></span></button>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <h5 class="header">Work History</h5>
+                                    <div class="edu-box">
+                                        <h3 class="text-secondary">Oncoming...</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="contact" id="contact">
+                            <h5 class="header">Contact information</h5>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="contact-add d-flex justify-content-between p-3 bg-white">
+                                        <div class="address text-start">
+                                            <p>Country: </p>
+                                            <p>City: </p>
+                                            <p>Village: </p>
+                                        </div>
+                                        <div class="address-answer text-end">
+                                            <p>Thailand</p>
+                                            <p>Maehongson</p>
+                                            <p>Numkat</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="contact-add d-flex justify-content-between h-100 p-3 bg-white shadow">
+                                        <div class="address text-start">
+                                            <p>Email: </p>
+                                            <p>Personal: </p>
+                                        </div>
+                                        <div class="address-answer text-end">
+                                            <p>workedcoding@gmail.com</p>
+                                            <p>(+66) 654376493</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <footer class="d-flex justify-content-center align-items-center bg-white my-3">
+                            <h5>&copy; 2020 ALL Right Reserved.</h5>
+                        </footer>
                     </div>
                 </div>
             </div>
@@ -83,6 +211,7 @@
     <!-- Import script -->
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/fcb0730fe4.js" crossorigin="anonymous"></script>
