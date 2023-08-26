@@ -3,25 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 5 -->
     <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <!-- Css -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
     <title>OIL PORT.</title>
 </head>
 <body>
     <!-- Info bar -->
     <div class="container">
         <div class="row">
-            <div class="col-0 col-lg-3 side-bar">
-                <div class="row">
-                    <div class="col-9 col-md-5 col-lg-3 top-info">
+            <div class="col-lg-3 col-xl-3">
+                <div class="row side-bar">
+                    <div class="col-8 col-sm-5 col-md-5 col-lg-3 col-xl-3 top-info">
                         <div class="profile d-inline-flex justify-content-center flex-column align-items-center py-3 w-100">
-                            <!-- <i class="fa-solid fa-ellipsis-vertical" onclick="toggleSidebar()"></i> -->
+                            <i class="fa-solid fa-ellipsis-vertical" onclick="toggleSidebar()"></i>
                             <img src="img/work-img/man.png" alt="" width="60rem" height="60rem">
                             <p class="name m-0"><strong>Tananun Wanasinsomboon</strong></p>
                             <p class="position m-0">Newbie Web Developer</p>
                         </div>
                     </div>
-                    <div class="col-9 col-md-5 col-lg-3 middle-info">
+                    <div class="col-8 col-sm-5 col-md-5 col-lg-3 col-xl-3 middle-info">
                         <div class="info-detail">
                             <div class="country d-flex justify-content-between">
                                 <div class="country-left text-start">
@@ -32,54 +37,37 @@
                                 <div class="country-right text-end">
                                     <p>Thailand</p>
                                     <p>Maehongson</p>
-                                    <p>26</p>
+                                    <p>27</p>
                                 </div>
                             </div>
                             <hr>
-                            <div class="lang-skill py-3">
-                                <div class="lang">
-                                    <div class="circular-progress">
-                                        <div class="lang-percent">0%</div>
-                                    </div>
-                                    <p class="mt-2 mb-0">Thai</p>
-                                </div>
-                                <div class="lang">
-                                    <div class="circular-progressE">
-                                        <div class="lang-percentE">0%</div>
-                                    </div>
-                                    <p class="mt-2 mb-0">English</p>
-                                </div>
+                            <H3 class="lang-header">SKILL</H3>
+                            <div class="skill py-2">
+                                <ul class="lang">
+                                    <p class="lang-section">Language</p>
+                                    <li class="mt-2 mb-0">Thai(Native)</li>
+                                    <li class="mt-2 mb-0">English(Beginner)</li>
+                                </ul>
+                                <ul class="code-section">
+                                    <p class="lang-header">Technical Skills</p>
+                                    <li class="mt-2 mb-0">HTML</li>
+                                    <li class="mt-2 mb-0">CSS</li>
+                                    <li class="mt-2 mb-0">JAVASCRIPT</li>
+                                    <li class="mt-2 mb-0">PHP</li>
+                                </ul>
+                                <ul class="tools">
+                                    <p class="lang-header">Tools & Software</p>
+                                    <li>GitHub</li>
+                                    <li>Visual Studio Code</li>
+                                </ul>
                             </div>
                             <hr>
-                            <div class="code-lang py-2">
-                                <div class="d-flex justify-content-between">
-                                    <p>HTML</p>
-                                    <p>90%</p>
-                                </div>
-                                <div class="skill-name"></div>
-                                <div class="code-percent html"></div>
-                                <div class="d-flex justify-content-between mt-2">
-                                    <p>CSS</p>
-                                    <p>80%</p>
-                                </div>
-                                <div class="skill-name"></div>
-                                <div class="code-percent css"></div>
-                                <div class="d-flex justify-content-between mt-2">
-                                    <p>JAVASCRIPT</p>
-                                    <p>70%</p>
-                                </div>
-                                <div class="skill-name"></div>
-                                <div class="code-percent js"></div>
-                                <div class="d-flex justify-content-between mt-2">
-                                    <p>PHP</p>
-                                    <p>65%</p>
-                                </div>
-                                <div class="skill-name"></div>
-                                <div class="code-percent php"></div>
+                            <div class="cv">
+                                <p class="dowload">Dowload Resume <i class="fa-solid fa-download"></i></p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-9 col-md-5 col-lg-3 bottom-info">
+                    <div class="col-8 col-sm-5 col-md-5 col-lg-3 col-xl-3 bottom-info">
                         <div class="info-footer py-2 d-flex justify-content-center gap-2">
                             <a href="https://www.facebook.com/tananun.wanasin/"><i class="fa-brands fa-facebook" style="color: #424242;"></i></a>
                             <a href="https://github.com/THEGATESTART"><i class="fa-brands fa-github" style="color: #424242;"></i></a>
@@ -88,9 +76,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-9">
+            <div class="col-lg-9 col-xl-9">
                 <div class="row">
-                    <div class="col-12 col-md-12 col-lg-12 nav-top">
+                    <div class="col-md-12 col-lg-12 col-xl-12 nav-top">
                         <nav class="bg-white">
                             <ul class="d-flex justify-content-between align-items-center gap-2 py-2 px-3">
                                 <button onclick="toggleSidebar()"><i class="fa-solid fa-ellipsis-vertical"></i></button>
@@ -103,7 +91,7 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 middle-content">
+                    <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-12 middle-content">
                         <section class="my-banner" id="home">
                             <div class="bg-ban"></div>
                             <div class="sub-bg"></div>
@@ -126,7 +114,7 @@
                         <section class="works" id="works">
                             <h5 class="mt-2 header">My Works</h5>
                             <div class="row">
-                                <div class="col-lg-12">
+                                <div class="col-sm-6 col-md-12 col-lg-12 col-xl-12">
                                     <div class="row">
                                         <div class="col-md-4">
                                             <div class="work-done">
@@ -144,7 +132,7 @@
                         </section>
                         <section class="resume" id="resume">
                             <div class="row">
-                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                     <h5 class="header">Education</h5>
                                     <div class="edu-box">
                                         <div class="univer-box d-flex justify-content-between">
@@ -157,10 +145,12 @@
                                             </div>
                                         </div>
                                         <p class="m-0">Bachelor of Science Program in Computer Science, Muang Nan, Nan</p>
-                                        <button class="more-diplome p-0 mt-2">DIPLOME <span>></span></button>
+                                        
+                                        <!-- Button trigger modal -->
+                                        <button class="btn more-diplome p-0 mt-2" id="show-box">DIPLOME <span>></span></button>
                                     </div>
                                 </div>
-                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                     <h5 class="header">Work History</h5>
                                     <div class="edu-box">
                                         <h3 class="text-secondary">Oncoming...</h3>
@@ -199,21 +189,108 @@
                                 </div>
                             </div>
                         </section>
+                        <section class="contact-me">
+                            <h5 class="header">Get in touch</h5>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <div class="contact-contain">
+                                        <form class="form-send">
+                                            <div class="form-contact" id="name-form">
+                                                <i id="failue-name"></i>
+                                                <input type="text" class="username" id="name" name="name" placeholder="Name" onkeyup="validateName()" />
+                                                <i class="fa-solid fa-user"></i>
+                                            </div>
+                                            <div id="name-error"></div>
+                                            <div class="form-contact">
+                                                <i id="failue-mail"></i>
+                                                <input type="email" class="mail" name="mail" id="email" placeholder="Email" onkeyup="validateEmail()" />
+                                                <i class="fa-solid fa-at"></i>
+                                            </div>
+                                            <div id="mail-error"></div>
+                                            <div class="form-contact">
+                                                <i id="failue-subject"></i>
+                                                <input type="text" class="subject" name="subject" id="subject" placeholder="Subject" onkeyup="validateSubject()" />
+                                                <i class="fa-solid fa-book-medical"></i>
+                                            </div>
+                                            <div id="subject-error"></div>
+                                            <div class="form-contact">
+                                                <i id="failue-message"></i>
+                                                <textarea name="message" id="message" rows="5" placeholder="Message" onkeyup="validateMessage()"></textarea>
+                                                <i class="fa-solid fa-envelope"></i>
+                                            </div>
+                                            <div id="message-error"></div>
+                                            <div id="status-error"></div>
+
+                                            <div id="submit-error"></div>
+                                            <button onclick="return validateForm()" class="send-mes">SEND MESSAGE</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
                         <footer class="d-flex justify-content-center align-items-center bg-white my-3">
-                            <h5>&copy; 2020 ALL Right Reserved.</h5>
+                            <h5>&copy; 2023 ALL Right Reserved.</h5>
                         </footer>
                     </div>
                 </div>
             </div>
+
         </div>
+    </div>
+
+    <div class="moreBox" id="moreBox">
+        <div class="nav-box">
+            <div class="close-img"  id="close-box">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="img/bg.jpg" class="img-fluid zooming" alt="Certificate">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/bg.jpg" class="img-fluid zooming" alt="Certificate">
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>   
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white"></div>
     </div>
     
     <!-- Import script -->
     <script src="js/bootstrap.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/script.js"></script>
-
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/fcb0730fe4.js" crossorigin="anonymous"></script>
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+
+        });
+    </script>
 </body>
 </html>
