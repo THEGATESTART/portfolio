@@ -17,6 +17,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-xl-3">
+
+                <!-- Start side bar -->
                 <div class="row side-bar">
                     <div class="col-8 col-sm-5 col-md-5 col-lg-3 col-xl-3 top-info">
                         <div class="profile d-inline-flex justify-content-center flex-column align-items-center py-3 w-100">
@@ -75,12 +77,18 @@
                         </div>
                     </div>
                 </div>
+                <!-- End side bar -->
+
             </div>
             <div class="col-lg-9 col-xl-9">
                 <div class="row">
+
+                    <!-- Start nav bar -->
                     <div class="col-md-12 col-lg-12 col-xl-12 nav-top">
                         <nav class="bg-white">
                             <ul class="d-flex justify-content-between align-items-center gap-2 py-2 px-3">
+                                
+                                <!-- button on click to show side bar -->
                                 <button onclick="toggleSidebar()"><i class="fa-solid fa-ellipsis-vertical"></i></button>
                                 <div class="list-link d-flex justify-content-end align-items-center gap-2">
                                     <li class="list-unstyled"><a href="#home">HOME</a></li>
@@ -91,7 +99,10 @@
                             </ul>
                         </nav>
                     </div>
+                    <!-- End nav bar -->
+
                     <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-12 middle-content">
+                        <!-- Start banner -->
                         <section class="my-banner" id="home">
                             <div class="bg-ban"></div>
                             <div class="sub-bg"></div>
@@ -111,6 +122,9 @@
                                 </div>
                             </div>
                         </section>
+                        <!-- End banner -->
+
+                        <!-- Start work -->
                         <section class="works" id="works">
                             <h5 class="mt-2 header">My Works</h5>
                             <div class="row">
@@ -130,20 +144,21 @@
                                 </div>
                             </div>
                         </section>
+                        <!-- End work -->
+
+                        <!-- Start resume -->
                         <section class="resume" id="resume">
                             <div class="row">
                                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                     <h5 class="header">Education</h5>
                                     <div class="edu-box">
-                                        <div class="univer-box d-flex justify-content-between">
+                                        <div class="univer-box">
                                             <div class="univer-content">
-                                                <h5>Rajamankala University of <br>Technology lanna Nan</h5>
-                                                <p>Student</p>
-                                            </div>
-                                            <div class="univer-date">
+                                                <h5>Rajamankala University of Technology lanna Nan</h5>
                                                 <p>May 2017 - March 2020</p>
                                             </div>
                                         </div>
+                                        <p class="student">Student</p>
                                         <p class="m-0">Bachelor of Science Program in Computer Science, Muang Nan, Nan</p>
                                         
                                         <!-- Button trigger modal -->
@@ -158,6 +173,9 @@
                                 </div>
                             </div>
                         </section>
+                        <!-- End resume -->
+
+                        <!-- Start contact -->
                         <section class="contact" id="contact">
                             <h5 class="header">Contact information</h5>
                             <div class="row">
@@ -189,6 +207,9 @@
                                 </div>
                             </div>
                         </section>
+                        <!-- End resume -->
+
+                        <!-- Start form contact -->
                         <section class="contact-me">
                             <h5 class="header">Get in touch</h5>
                             <div class="row">
@@ -228,9 +249,14 @@
                                 </div>
                             </div>
                         </section>
+                        <!-- End form contact -->
+
+                        <!-- Start footer -->
                         <footer class="d-flex justify-content-center align-items-center bg-white my-3">
                             <h5>&copy; 2023 ALL Right Reserved.</h5>
                         </footer>
+                        <!-- End footer -->
+
                     </div>
                 </div>
             </div>
@@ -257,7 +283,7 @@
                 </div>
             </div>
             <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>   
+            <!-- <div class="swiper-pagination"></div>    -->
         </div>
 
         <!-- If we need navigation buttons -->

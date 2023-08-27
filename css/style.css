@@ -284,23 +284,33 @@ nav ul li a:hover {
     padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+.edu-box .student {
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: italic;
+    margin: 0;
+}
 .edu-box p {
     font-size: .9rem;
+    font-style: italic;
+    margin: 0;
 }
 .edu-box h5 {
     font-size: 1rem;
     font-weight: 600;
 }
-.univer-content p {
-    font-style: italic;
-    margin: 0;
-    padding-bottom: .5rem;
+.univer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
-.univer-date p {
+.univer-content p {
+    width: 13rem;
     border: none;
     padding: .3rem .7rem;
     border-radius: 3rem;
     box-shadow: inset rgba(0, 0, 0, 0.3) 0px 0px 7px;
+    margin-bottom: .5rem;
 }
 .edu-box .more-diplome {
     border: none;
@@ -567,12 +577,40 @@ footer h5 {
     .resume .header {
         margin-top: 1rem;
     }
+    .edu-box .univer-box {
+        display: flex;
+        flex-direction: column;
+    }
 
     .contact .header {
         margin-top: 1rem;
     }
     .contact .row {
         gap: .8rem;
+    }
+
+    /* Swiper Box */
+    .swiper {
+        position: absolute;
+        top: 55%;
+        transform: translateY(-50%);
+        width: 100%;
+        height: 450px;
+    }
+    .zoomer {
+        transform: scale(1.5);
+    }
+    .swiper-button-next {
+        right: calc(15% - 50px) !important;
+    }
+    .swiper-button-prev {
+        left: calc(15% - 50px) !important;
+    }
+    .swiper-button-white {
+        color: #ffffff !important;
+    }
+    .swiper-pagination {
+        display: none;
     }
 }
 
@@ -778,6 +816,28 @@ footer h5 {
     .contact .row {
         gap: 0;
     }
+
+    /* Swiper Box */
+    .swiper {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 600px;
+        height: 450px;
+    }
+    .zoomer {
+        transform: scale(1.5);
+    }
+    .swiper-button-next {
+        right: calc(12% - 50px) !important;
+    }
+    .swiper-button-prev {
+        left: calc(12% - 50px) !important;
+    }
+    .swiper-button-white {
+        color: #ffffff !important;
+    }
+
 }
 
 /* Galaxy tab */
@@ -905,5 +965,26 @@ footer h5 {
     }
     .edu-box p {
         font-size: .9rem;
+    }
+
+    /* Swiper Box */
+    .swiper {
+        position: absolute;
+        top: 45%;
+        transform: translateY(-50%);
+        width: 800px;
+        height: auto;
+    }
+    .zoomer {
+        transform: scale(1.5);
+    }
+    .swiper-button-next {
+        right: calc(12% - 50px) !important;
+    }
+    .swiper-button-prev {
+        left: calc(12% - 50px) !important;
+    }
+    .swiper-button-white {
+        color: #ffffff !important;
     }
 }
