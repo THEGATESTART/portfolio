@@ -225,6 +225,16 @@ nav ul li a:hover {
     transform: translateY(-4px);
 }
 
+/* about me */
+.aboutme {
+    margin-top: 4rem;
+}
+.aboutme h5 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+/* end about me */
+
 /* My works */
 .works h5 {
     font-size: 1rem;
@@ -283,6 +293,7 @@ nav ul li a:hover {
     background-color: #ffffff;
     padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 1rem;
 }
 .edu-box .student {
     font-size: 1rem;
